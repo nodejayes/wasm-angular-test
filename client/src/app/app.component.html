@@ -1,0 +1,18 @@
+<div>
+  <input type="text" [(ngModel)]="value" />
+  <button (click)="start()">Benchmark</button>
+
+  <table>
+    <tr>
+      <td>WebAssembly</td>
+      <td>{{resultWasmFibo}}</td>
+      <td>{{runtimeWasmFibo}} ms</td>
+    </tr>
+    <tr>
+      <td>Javascript</td>
+      <td>{{resultJsFibo}}</td>
+      <td>{{runtimeJsFibo}} ms</td>
+    </tr>
+  </table>
+</div>
+
